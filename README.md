@@ -10,3 +10,5 @@ To use this you should:
 3. You should now be able to use the bean-price tool to fetch prices!
 
 On step 2, please note that the last part that says "bitcoin" is based on the URL used to get the historical prices, not the ticker symbol (in that example, the URL is https://coinmarketcap.com/currencies/bitcoin/historical-data/).
+
+Credit to this post for the idea: https://medium.com/@danielcimring/downloading-historical-data-from-coinmarketcap-41a2b0111baf
