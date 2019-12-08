@@ -2,7 +2,7 @@
 
 If you use the beancount cli accounting tool (http://furius.ca/beancount/), this price source will let you fetch cryptocurrency prices from coinmarketcap.com. This tool works by scraping the website rather than using the API.
 
-This is **only** intended for personal use and not for scraping at scale. Coinmarketcap will likely block you if you query too frequently and, for this reason, the code is set by default to query no more than 1 time per second. I encourage you to be a good internet citizen and not go any quicker than that or use this tool for anything but limited personal use.
+This is **only** intended for personal use and not for scraping at scale. Coinmarketcap will likely block you if you query too frequently and, for this reason, the code is set by default to query no more than 1 time per 15 seconds. I encourage you to be a good internet citizen and not go any quicker than that or use this tool for anything but limited personal use.
 
 To use this you should:
 1. Start by adding the "price_sources" folder here into some location defined in your $PYTHONPATH
