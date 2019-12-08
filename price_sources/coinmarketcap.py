@@ -43,8 +43,9 @@ class Source(source.Source):
         try:
             content = requests.get(url).content
             soup = BeautifulSoup(content,'html.parser')
-            table = soup.find('table', {'class': 'table'})
-            tr = table.findChildren('tr')[1]
+            wrappingDiv = soup.find('div', {'class': 'cmc-table'})
+            tbody = wrappingDiv.findChild('tbody')
+            tr = tbody.findChildren('tr')[1]
             data = [td.text.strip() for td in tr.findChildren('td')]
 
             parsed_date = parse_date_liberally(data[0])
