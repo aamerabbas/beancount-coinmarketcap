@@ -12,7 +12,7 @@ from beancount.utils.date_utils import parse_date_liberally
 ZERO = timedelta(0)
 BASE_URL_TEMPLATE = Template("https://coinmarketcap.com/currencies/$ticker/historical-data/?start=$date&end=$date")
 CURRENCY = "USD"
-TIME_DELAY = 1
+TIME_DELAY = 20
 
 class UTCtzinfo(tzinfo):
     def utcoffset(self, dt):
