@@ -57,8 +57,8 @@ class Source(source.Source):
                 assert len(quote) == 1
                 quote = quote[0]
 
-            date = parser.isoparse(quote['quote']['USD']['timestamp'])
-            price = D(quote['quote']['USD']['close'])
+            date = parser.isoparse(quote['quote'][CURRENCY]['timestamp'])
+            price = D(quote['quote'][CURRENCY]['close'])
 
             return source.SourcePrice(price, date, CURRENCY)
         except KeyError as e:
