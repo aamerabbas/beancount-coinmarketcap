@@ -1,0 +1,3 @@
+2020-11-05:
+
+- Updated to use the JSON API. Scraping no longer seems to work since the table is populated with an ajax call.

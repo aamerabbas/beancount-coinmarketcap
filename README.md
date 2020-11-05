@@ -1,6 +1,6 @@
 # Coinmarketcap price source for Beancount
 
-If you use the beancount cli accounting tool (http://furius.ca/beancount/), this price source will let you fetch cryptocurrency prices from coinmarketcap.com. This tool works by scraping the website rather than using the API.
+If you use the beancount cli accounting tool (http://furius.ca/beancount/), this price source will let you fetch cryptocurrency prices from coinmarketcap.com. This tool originally worked by scraping the website, but now queries a JSON API (the same API the website itself uses to populate the historical prices table).
 
 This is **only** intended for personal use and not for scraping at scale. Coinmarketcap will likely block you if you query too frequently and, for this reason, the code is set by default to query no more than 1 time per 15 seconds. I encourage you to be a good internet citizen and not go any quicker than that or use this tool for anything but limited personal use.
 
