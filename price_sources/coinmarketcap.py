@@ -58,7 +58,7 @@ class Source(source.Source):
                 quote = quote[0]
 
             date = parser.isoparse(quote['quote'][CURRENCY]['timestamp'])
-            price = D(quote['quote'][CURRENCY]['close'])
+            price = D(quote['quote'][CURRENCY]['close']).quantize(D('0.0000'))
 
             return source.SourcePrice(price, date, CURRENCY)
         except KeyError as e:
